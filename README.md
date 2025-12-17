@@ -21,3 +21,13 @@ This project was built with assistance from AI 🤖
 - Designed for experimental / educational use
 
 Enjoy.
+
+## Usage
+
+Load AnimSnatcher using the script below:
+
+Run the script using a compatible Roblox executor. The UI will open automatically.
+
+```
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rainlovy/AnimSnatcher/main/AnimSnatcher.lua"))()
+```
