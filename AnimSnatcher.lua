@@ -882,8 +882,6 @@ local function CreatePageControls()
     return group, firstBtn, lastBtn, backBtn, nextBtn, pageBox, indicator, fileInd
 end
 
-
-
 local function SetupWindow()
     ScreenGui.Name = "MyAnimationHub"
     ScreenGui.Parent = PlayerGui
@@ -939,16 +937,19 @@ local function SetupWindow()
     Instance.new("UICorner", MinimizeButton)
 
     local RestoreButton = Instance.new("TextButton")
-    RestoreButton.Text = "AnimSnatcher"
+    RestoreButton.Text = "Anim\nSnatcher"
     RestoreButton.TextColor3 = Color3.new(1,1,1)
-    RestoreButton.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+    RestoreButton.BackgroundColor3 = Color3.fromRGB(35, 45, 70)
     RestoreButton.Size = UDim2.new(0, 50, 0, 50)
     RestoreButton.Position = UDim2.new(1, -60, 0, 10)
     RestoreButton.AutoButtonColor = false
     RestoreButton.Visible = false
     RestoreButton.Parent = ScreenGui
+    RestoreButton.TextXAlignment = Enum.TextXAlignment.Center
+    RestoreButton.TextYAlignment = Enum.TextYAlignment.Center
+    RestoreButton.TextWrapped = true
     Instance.new("UICorner", RestoreButton)
-
+    
     local ButtonsRow = Instance.new("Frame")
     ButtonsRow.Name = "ButtonsRow"
     ButtonsRow.Size = UDim2.new(0, ListWidth, 0, ControlRowHeight)
@@ -1993,4 +1994,5 @@ for _, row in pairs(StolenItemsContainer:GetChildren()) do
 end
 
 UpdateFilteredRows()
+
 print("AnimSnatcher - Loaded Successfully!")
