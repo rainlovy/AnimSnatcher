@@ -1,3 +1,11 @@
+-- AnimSnatcher
+-- Author: rainlovy
+-- GitHub: https://github.com/rainlovy/AnimSnatcher
+-- Created: 2025
+-- Advanced animation snatcher & manager
+
+local __ANIMSNATCHER_CORE = "anim.snatcher.core.v1"
+
 local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 local UserInputService = game:GetService("UserInputService")
@@ -1996,3 +2004,4 @@ end
 UpdateFilteredRows()
 
 print("AnimSnatcher - Loaded Successfully!")
+
